@@ -1,0 +1,69 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #020932;
+    border-bottom: 1px solid #B3966F;
+}
+
+#custom-launcher {
+    background: none;
+    color: #B3966F;
+    font-size: 17px;
+}
+
+#window {
+    background: none;
+    color: #FFFFFF;
+}
+
+#workspaces button {
+    background: none;
+    color: #FFFFFF;
+}
+
+#cpu { 
+    background: none;
+    color: #FFFFFF;
+}
+
+#memory {
+    background: none;
+    color: #FFFFFF;
+}
+
+#temperature {
+    background: none;
+    color: #FFFFFF;
+}
+
+#network {
+    background: none;
+    color: #FFFFFF;
+}
+
+#pulseaudio {
+    background: none;
+    color: #FFFFFF;
+}
+
+#clock {
+    background: none;
+    color: #FFFFFF;
+}
+
+#custom-power {
+    background: none;
+    color: #B3966F;
+    font-size: 19px;
+}
+
+#disk {
+    background: none;
+    color: #FFFFFF;
+}

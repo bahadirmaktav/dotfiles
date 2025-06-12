@@ -193,7 +193,7 @@ bindsym $mod+r mode "resize"
 exec --no-startup-id xrandr --output DP-0 --right-of HDMI-1
 exec_always --no-startup-id picom &
 exec_always ~/.config/polybar/hack/launch.sh &
-exec_always feh --bg-fill ~/Pictures/Wallpapers/cyberpunk_lucy.png
+exec_always feh --bg-fill ~/Pictures/Wallpapers/cyberpunk_04.jpg
 
 # Bindings
 bindsym $mod+Shift+e exec --no-startup-id ~/.config/polybar/hack/scripts/powermenu.sh
@@ -215,11 +215,11 @@ workspace $ws2 output $main_monitor
 workspace $ws3 output $main_monitor
 workspace $ws4 output $secondary_monitor
 
-# Window title
 # Class                 border  bground text    indicator child_border
 client.focused          #6D6D6D #1b1f23 #FFFFFF #2E9EF4   #285577
 client.focused_inactive #444d56 #444d56 #FFFFFF #484E50   #5F676A
 client.unfocused        #24292e #24292e #FFFFFF #292D2E   #222222
 
+# Window title
 for_window [class=".*"] title_format " %title"
 font pango:FiraCode Nerd Font Mono 8
