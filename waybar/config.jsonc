@@ -40,23 +40,19 @@
     },
     "hyprland/workspaces": {
         "format": "{icon}",
-        // "on-click": "activate",
+        "on-click": "activate",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
             "urgent": "",
             "active": "",
             "default": ""
         },
+        "all-outputs": true,
         "sort-by-number": true
     },
     "clock": {
         "timezones": "Europe/Istanbul",
         "format": "󰥔 {:%H:%M}",
-        "format-alt": " {:L%A, %B %d, %Y (%R)}",
+        "format-alt": " {:L%A, %B %d, %Y (%R)}",
         "tooltip-format": "\n<span size='9pt'>{calendar}</span>",
         "tooltip": false
     },
@@ -73,7 +69,7 @@
         "hwmon-path": "/sys/devices/pci0000:00/0000:00:01.1/0000:01:00.0/nvme/nvme0/hwmon0/temp1_input",
         "critical-threshold": 80,
         "format": "{icon} {temperatureC}°C",
-        "format-icons": ["", "", ""],
+        "format-icons": ["", "", ""],
         "tooltip": false
         },
     "network": {
@@ -91,11 +87,6 @@
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol",
@@ -104,17 +95,17 @@
     },
     "custom/power": {
         "format" : "󰐥 ",
-        "on-click": "~/.config/waybar/power_menu.sh",
+        "on-click": "~/.config/rofi/powermenu.sh",
 		"tooltip": false
     },
     "custom/launcher": {
         "format" : " 󰣇",
-        "on-click": "~/.config/waybar/launcher_menu.sh",
+        "on-click": "~/.config/rofi/launcher.sh",
 		"tooltip": false
     },
     "disk": {
         "interval": 30,
-        "format": " {free}",
+        "format": " {free}",
         "unit": "GiB"
     }
 }
