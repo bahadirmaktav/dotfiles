@@ -53,7 +53,6 @@ run_cmd() {
 		elif [[ $1 == '--reboot' ]]; then
 			systemctl reboot
 		elif [[ $1 == '--suspend' ]]; then
-			playerctl --all-players pause
 			systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
             hyprctl dispatch exit
