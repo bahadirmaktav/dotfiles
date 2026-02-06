@@ -39,13 +39,8 @@
         "separate-outputs": true
     },
     "hyprland/workspaces": {
-        "format": "{icon}",
+        "format": "{id}",
         "on-click": "activate",
-        "format-icons": {
-            "urgent": "",
-            "active": "",
-            "default": ""
-        },
         "all-outputs": true,
         "sort-by-number": true
     },

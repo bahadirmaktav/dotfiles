@@ -7,13 +7,13 @@
 }
 
 window#waybar {
-    background: #020932;
-    border-bottom: 1px solid #B3966F;
+    background: #212121;
+    border-bottom: 1px solid #F4F4F4;
 }
 
 #custom-launcher {
     background: none;
-    color: #B3966F;
+    color: #F4F4F4;
     font-size: 17px;
 }
 
