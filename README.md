@@ -59,11 +59,8 @@ git clone https://github.com/bahadirmaktav/dotfiles.git
 cd dotfiles
 
 # 2. Install required packages
-# For Arch/Manjaro:
+# For Arch:
 sudo pacman -S hyprland hyprlock hyprpaper kitty fish rofi waybar python-pywal
-
-# For Ubuntu/Debian:
-sudo apt install hyprland hyprlock hyprpaper kitty fish rofi waybar python3-pywal
 
 # 3. Install fonts
 sudo pacman -S ttf-jetbrains-mono-nerd  # or download from nerd-fonts.com
@@ -86,7 +83,7 @@ Then **log out and back in** to start Hyprland.
 Choose your distribution and install all required tools:
 
 <details>
-<summary><b>Arch Linux / Manjaro</b></summary>
+<summary><b>Arch Linux</b></summary>
 
 ```bash
 sudo pacman -S \
@@ -95,36 +92,6 @@ sudo pacman -S \
   fish oh-my-posh \
   python-pywal \
   ttf-jetbrains-mono-nerd \
-  pavucontrol
-```
-
-</details>
-
-<details>
-<summary><b>Ubuntu / Debian</b></summary>
-
-```bash
-sudo apt update && sudo apt install \
-  hyprland hyprlock hyprpaper \
-  kitty rofi waybar \
-  fish fonts-jetbrains-mono \
-  oh-my-posh python3-pywal \
-  pavucontrol
-```
-
-Note: Hyprland may need to be installed from testing/unstable repos or built from source.
-
-</details>
-
-<details>
-<summary><b>Fedora / RHEL</b></summary>
-
-```bash
-sudo dnf install \
-  hyprland hyprlock hyprpaper \
-  kitty rofi waybar \
-  fish python3-pywal \
-  java-fonts \
   pavucontrol
 ```
 
