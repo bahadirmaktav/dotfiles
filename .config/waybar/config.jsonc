@@ -1,14 +1,16 @@
 {
+    // WAYBAR 
     "output": "DP-1",
-    "layer": "bottom",
+    "layer": "top",
     "position": "top",
-    "height": 20,
-    // "width": 1920,
-    "spacing": 4,
+    "height": 30,
+    "margin-top": 6,
+    "margin-left": 6,
+    "margin-right": 6,
+    
+    // MODULES PLACEMENT
     "modules-left": [
-        "custom/launcher",
-        "custom/seperator",
-        "hyprland/window"
+        "custom/launcher"
     ],
     "modules-center": [
         "hyprland/workspaces"
@@ -22,8 +24,6 @@
         "custom/seperator",
         "temperature",
         "custom/seperator",
-        "network",
-        "custom/seperator",
         "pulseaudio",
         "custom/seperator",
         "clock",
@@ -31,33 +31,38 @@
         "custom/power"
     ],
     "custom/seperator": {
-        "format": " "
+        "format": " | "
     },
-    "hyprland/window": {
-        "format": "{}",
-        "rewrite": {},
-        "separate-outputs": true
+    
+    // MODULES LEFT
+    "custom/launcher": {
+        "format" : " 󰣇",
+        "on-click": "~/.config/rofi/launcher.sh",
+		"tooltip": false
     },
+
+    // MODULES CENTER
     "hyprland/workspaces": {
         "format": "{id}",
         "on-click": "activate",
         "all-outputs": true,
         "sort-by-number": true
     },
-    "clock": {
-        "timezones": "Europe/Istanbul",
-        "format": "󰥔 {:%H:%M}",
-        "format-alt": " {:L%A, %B %d, %Y (%R)}",
-        "tooltip-format": "\n<span size='9pt'>{calendar}</span>",
-        "tooltip": false
-    },
+
+    // MODULES RIGHT
     "cpu": {
         "format": " {usage}%",
         "tooltip": false
     },
     "memory": {
-        "format": " {used}GiB",
+        "format": " {percentage}%",
         "interval": 60,
+        "tooltip": false
+    },
+    "disk": {
+        "interval": 30,
+        "format": " {free}",
+        "unit": "GiB",
         "tooltip": false
     },
     "temperature": {
@@ -65,14 +70,6 @@
         "critical-threshold": 80,
         "format": "{icon} {temperatureC}°C",
         "format-icons": ["", "", ""],
-        "tooltip": false
-        },
-    "network": {
-        "interface": "enp42s0",
-        "format-ethernet": "󰣺 {ipaddr}",
-        "format-alt": "{ifname} / {bandwidthTotalBits}",
-        "format-disconnected": "󰣼 ",
-        "max-length": 50,
         "tooltip": false
     },
     "pulseaudio": {
@@ -88,19 +85,16 @@
         "scroll-step": 1,
         "tooltip": false
     },
+    "clock": {
+        "timezones": "Europe/Istanbul",
+        "format": "󰥔 {:%H:%M}",
+        "format-alt": " {:L%A, %B %d, %Y}",
+        "tooltip-format": "\n<span size='9pt'>{calendar}</span>",
+        "tooltip": false
+    },
     "custom/power": {
         "format" : "󰐥 ",
         "on-click": "~/.config/rofi/powermenu.sh",
 		"tooltip": false
-    },
-    "custom/launcher": {
-        "format" : " 󰣇",
-        "on-click": "~/.config/rofi/launcher.sh",
-		"tooltip": false
-    },
-    "disk": {
-        "interval": 30,
-        "format": " {free}",
-        "unit": "GiB"
     }
 }

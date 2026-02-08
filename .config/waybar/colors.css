@@ -1,0 +1,3 @@
+@define-color colorBackground rgba(26, 32, 28, 0.75);
+@define-color colorActiveText rgba(228, 227, 198, 1.0);
+@define-color colorInactiveText rgba(228, 227, 198, 0.5);

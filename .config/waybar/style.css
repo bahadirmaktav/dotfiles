@@ -1,0 +1,96 @@
+@import "colors.css";
+
+/* COMMON */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+/* WAYBAR */
+window#waybar {
+    background: @colorBackground;
+    border: 1px solid #F4F4F4;
+    border-radius: 10px;
+}
+
+#custom-seperator {
+    background: none;
+    color: @colorInactiveText;
+}
+
+/* MODULES LEFT */
+#custom-launcher {
+    background: none;
+    color: @colorActiveText;
+    font-size: 19px;
+    padding-left: 3px;
+}
+
+/* MODULES CENTER */
+#window {
+    background: none;
+    color: @colorActiveText;
+}
+
+/* BOLD FOR ACTIVE WORKSPACES */
+#workspaces button {
+    font-weight: 500;
+    color: @colorInactiveText;
+}
+#workspaces button.active,
+#workspaces button.focused,
+#workspaces button.visible {
+    font-weight: 800;
+    color: @colorActiveText;
+}
+
+/* MODULES RIGHT */
+#workspaces button {
+    background: none;
+    color: @colorActiveText;
+}
+
+#cpu { 
+    background: none;
+    color: @colorActiveText;
+}
+
+#memory {
+    background: none;
+    color: @colorActiveText;
+}
+
+#temperature {
+    background: none;
+    color: @colorActiveText;
+}
+
+#network {
+    background: none;
+    color: @colorActiveText;
+}
+
+#pulseaudio {
+    background: none;
+    color: @colorActiveText;
+}
+
+#clock {
+    background: none;
+    color: @colorActiveText;
+}
+
+#custom-power {
+    background: none;
+    color: @colorActiveText;
+    font-size: 19px;
+    padding-right: 3px;
+}
+
+#disk {
+    background: none;
+    color: @colorActiveText;
+}
